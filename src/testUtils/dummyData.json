@@ -1,0 +1,32 @@
+[
+  {
+    "product_name": "Fuji apples",
+    "product_code": "AFI013",
+    "cost_price": 0.99,
+    "sell_price": {
+      "method": "margin",
+      "value": 1.16,
+      "margin": 0.15
+    }
+  },
+  {
+    "product_name": "Cavendish bananas",
+    "product_code": "BC2033",
+    "cost_price": 0.55,
+    "sell_price": {
+      "method": "margin",
+      "value": 0.7,
+      "margin": 0.21
+    }
+  },
+  {
+    "product_name": "Navel oranges",
+    "product_code": "ON3729",
+    "cost_price": 0.75,
+    "sell_price": {
+      "method": "value",
+      "value": 0.85,
+      "margin": 0.12
+    }
+  }
+]
