@@ -3,6 +3,7 @@ import './App.css'
 import InputPanel from './components/InputPanel/InputPanel'
 import { Product } from './types'
 import CalculationsTable from './components/CalculationsTable/CalculationsTable'
+import Header from './components/Header'
 
 function App() {
 	const [calculations, setCalculations] = useState<React.ReactNode[][]>([])
@@ -29,7 +30,7 @@ function App() {
 		})
 	}
 	return (
-		<>
+		<> <Header/>
 			<h1>Price Tool</h1>
 			<InputPanel addCalculation={addCalculation} />
 			<h2>Previous Price Calculations</h2>
