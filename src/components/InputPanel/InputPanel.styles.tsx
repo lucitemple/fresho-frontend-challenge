@@ -6,6 +6,7 @@ const InputPanelContainer = styled.section`
 	justify-content: center;
 	gap: 10px;
 	align-items: flex-end;
+	margin-bottom: 4rem;
 `
 
 export default InputPanelContainer

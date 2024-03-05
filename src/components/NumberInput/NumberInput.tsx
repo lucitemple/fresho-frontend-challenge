@@ -1,3 +1,6 @@
+import { Container, Label } from '../common/styles'
+import { Input, InputContainer } from './NumberInput.styles'
+
 type NumberInputProps = {
 	label: string
 	placeholder?: string
@@ -26,11 +29,11 @@ const NumberInput: React.FC<NumberInputProps> = ({
 	}
 
 	return (
-		<div>
-			<label>{label}</label>
-			<div>
+		<Container>
+			<Label>{label}</Label>
+			<InputContainer>
 				{leftSection && <span>{leftSection}</span>}
-				<input
+				<Input
 					placeholder={placeholder}
 					value={value === 0 ? '' : value.toString()}
 					disabled={disabled}
@@ -38,8 +41,8 @@ const NumberInput: React.FC<NumberInputProps> = ({
 					onChange={handleChange}
 				/>
 				{rightSection && <span>{rightSection}</span>}
-			</div>
-		</div>
+			</InputContainer>
+		</Container>
 	)
 }
 

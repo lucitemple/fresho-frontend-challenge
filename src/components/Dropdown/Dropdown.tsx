@@ -1,4 +1,6 @@
-import renderOptions from '../utils/renderOptions'
+import renderOptions from '../../utils/renderOptions'
+import {Input } from './Dropdown.styles'
+import { Container, Label, } from '../common/styles'
 
 type DropdownProps = {
 	onSelect: (selectedOption: string) => void
@@ -11,17 +13,17 @@ const Dropdown: React.FC<DropdownProps> = ({ onSelect, options }) => {
 	}
 
 	return (
-		<>
-			<label htmlFor="product-choice">Product</label>
-			<input
+		<Container>
+			<Label htmlFor="product-choice">Product</Label>
+			<Input
 				list="products"
 				placeholder="Select product"
 				name="product-choice"
 				id="product-choice"
 				onChange={handleSelect}
-			></input>
+			></Input>
 			<datalist id="products">{renderOptions(options)}</datalist>
-		</>
+		</Container>
 	)
 }
 
