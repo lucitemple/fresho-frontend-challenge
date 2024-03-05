@@ -3,7 +3,7 @@ import InputPanel from './InputPanel'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-const addCalculation =  () => vi.mock;
+const addCalculation = () => vi.mock
 
 describe('Given the input panel renders', () => {
 	test('it should have an input field for Product', () => {

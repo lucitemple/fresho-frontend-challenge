@@ -30,7 +30,8 @@ function App() {
 		})
 	}
 	return (
-		<> <Header/>
+		<>
+			<Header />
 			<h1>Price Tool</h1>
 			<InputPanel addCalculation={addCalculation} />
 			<h2>Previous Price Calculations</h2>

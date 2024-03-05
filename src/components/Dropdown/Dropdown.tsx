@@ -1,6 +1,6 @@
 import renderOptions from '../../utils/renderOptions'
-import {Input } from './Dropdown.styles'
-import { Container, Label, } from '../common/styles'
+import { Input } from './Dropdown.styles'
+import { Container, Label } from '../common/styles'
 
 type DropdownProps = {
 	onSelect: (selectedOption: string) => void

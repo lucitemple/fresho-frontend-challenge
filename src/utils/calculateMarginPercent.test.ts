@@ -1,3 +1,5 @@
-import { describe,} from 'vitest'
+import { describe } from 'vitest'
 
-describe.todo('Given the calculateMarginPercent function is called - TODO tests')
+describe.todo(
+	'Given the calculateMarginPercent function is called - TODO tests',
+)
