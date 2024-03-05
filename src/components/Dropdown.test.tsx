@@ -10,7 +10,7 @@ const products = [
 	{ product_name: 'Navel oranges' },
 ]
 
-const handleProductChange = () =>vi.mock;
+const handleProductChange = () => vi.mock;
     
     describe('Given the Dropdown component renders', () => {
 		test('it should have an input field for Product', () => {

@@ -1,15 +1,4 @@
-
-const renderOptions = (options: string[]) => {
-	if (!options || options.length === 0) {
-		return null
-	}
-
-	return options.map(optionItem => (
-		<option key={optionItem} value={optionItem}>
-			{optionItem}
-		</option>
-	))
-}
+import renderOptions from '../utils/renderOptions'
 
 type DropdownProps = {
 	onSelect: (selectedOption: string) => void
